@@ -1,32 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
 /* Resetando folha de estilo */
 * {
     margin: 0;
     padding: 0;
+    font-family: "Raleway", sans-serif;
     color: #fff;
 }
 
 :root {
     --cor-azul: #33A8DB;
+    --cor-cinza: #252525;
 }
 
 body {
     background-color: black;
-    font-family: "Raleway", sans-serif;
     scroll-behavior: smooth;
 }
 
-h1,
 h2 {
     color: var(--cor-azul);
     text-transform: uppercase;
-}
-
-h2 {
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: 2px;
 }
-/* header */
+
+
 .banner {
     width: 100%;
     height: 600px;
@@ -43,34 +42,35 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 100;
+    text-align: center;
+    gap: 24px;
 
-    h1 {
-        background: linear-gradient(to bottom, #33A8DB,#005479);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    img{
+    img {
         background-color: #0000005b;
         padding: 15px 5px;
         border-radius: 50%;
     }
 }
 
+.banner-content h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #33A8DB, #005479);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .banner-content button {
-    width: 326px;
     background-color: transparent;
-    font-size: large;
+    font-size: 1rem;
     font-weight: 600;
-    padding: 18px;
-    border: var(--cor-azul) 2px solid;
     color: var(--cor-azul);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 4px;
+    padding: 18px 32px;
+    border: var(--cor-azul) 2px solid;
     transition: all ease-in-out 0.5s;
 }
 
@@ -79,7 +79,7 @@ h2 {
     color: #fff;
     cursor: pointer;
 }
-/* 1° Section - conteúdo do curso*/
+
 #course-content {
     margin: auto;
     display: flex;
@@ -87,13 +87,13 @@ h2 {
     align-items: center;
     gap: 24px;
     max-width: 792px;
-    height: 325px;
     text-align: center;
     padding: 100px 0;
 }
 
 .module {
-    padding: 16px 127px;
+    padding: 16px;
+    width: 530px;
     background-color: #252525;
     border-radius: 57px;
     border: var(--cor-azul) 2px solid;
@@ -111,6 +111,7 @@ h2 {
     width: 100%;
     height: 363px;
     background-image: url(../images/woman-code.png);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     border-top: var(--cor-azul) 1px solid;
